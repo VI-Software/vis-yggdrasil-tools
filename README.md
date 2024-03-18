@@ -90,7 +90,7 @@ mc.getSkin(player)
 ### Check if Server is Banned by Mojang
 
 ```javascript
-mc.isServerBlocked('playmc.mx')
+mc.isServerBlocked('vis.galnod.com')
     .then(data => {
         console.log(data);
     })
