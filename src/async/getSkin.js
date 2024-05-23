@@ -11,7 +11,7 @@ function getSkin(uuid_player) {
         common.getUuid(uuid_player).then(uuid => {
             common
                 .get(
-                    `https://authserver-vis.galnod.com/session/minecraft/profile/${uuid}`
+                    `https://authserver.visoftware.tech/session/minecraft/profile/${uuid}`
                 )
                 .then(data => {
                     let json = JSON.parse(data);

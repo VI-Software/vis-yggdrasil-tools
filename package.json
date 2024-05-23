@@ -1,6 +1,6 @@
 {
   "name": "vis-yggdrasil-tools",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "NPM Package to interact with VIS' Custom Authentication Servers",
   "repository": "https://github.com/VI-Software/vis-yggdrasil-tools",
   "license": "GPL-3.0",

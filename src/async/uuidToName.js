@@ -11,7 +11,7 @@ async function uuidToName(player_string) {
         common.getUuid(player_string).then(uuid => {
             common
                 .get(
-                    `https://authserver-vis.galnod.com/session/minecraft/profile/${uuid}`
+                    `https://authserver.visoftware.tech/session/minecraft/profile/${uuid}`
                 )
                 .then(data => {
                     let json = JSON.parse(data);
