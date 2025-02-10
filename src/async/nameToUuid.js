@@ -10,7 +10,7 @@ function nameToUuid(player_string) {
     return new Promise((resolve, reject) => {
         common.getName(player_string).then(name => {
             common
-                .get(`https://authserver.visoftware.tech/account/users/profiles/minecraft/${name}`)
+                .get(`https://authserver.visoftware.dev/account/users/profiles/minecraft/${name}`)
                 .then(data => {
                     if (data === '') reject(new Error('Player Not Found'));
                     let json = JSON.parse(data);

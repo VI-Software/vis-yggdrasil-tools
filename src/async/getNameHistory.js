@@ -10,7 +10,7 @@ function getNameHistory(player_string) {
     return new Promise((resolve, reject) => {
         common.getUuid(player_string).then(uuid => {
             common
-                .get(`https://authserver.visoftware.tech/account/users/profiles/${uuid}/names`)
+                .get(`https://authserver.visoftware.dev/account/users/profiles/${uuid}/names`)
                 .then(data => {
                     data = JSON.parse(data);
                     data.forEach(e => {
